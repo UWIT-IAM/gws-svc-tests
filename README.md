@@ -17,6 +17,8 @@ These are some Json representation tests we can run when deploying/migrating.
 `$ nosetests .`<br>
 ... or<br>
 `$ nosetests --with-timer .`<br>
+... or<br>
+`$ pynose`<br>
 to get timing information for each test run
 * The tests should clean up after themselves.
 

@@ -1,12 +1,12 @@
 # configuration for gws tester
 
-HOST = 'groups.uw.edu'
-# HOST = 'dev.groups.uw.edu'
+# HOST = 'groups.uw.edu'
+HOST = 'dev.groups.uw.edu'
 # HOST = 'eval.groups.uw.edu'
 
-CERT_FILE = '/Users/jimt/src/UW/IAM/certs/jim7.cac.washington.edu.crt.uwca'
-KEY_FILE = '/Users/jimt/src/UW/IAM/certs/jim7.cac.washington.edu.key.uwca'
-CA_FILE = '/Users/jimt/src/UW/IAM/certs/cacerts.cert'
+CERT_FILE = '/Users/jimt/src/UW/IAM/certs/gws.cac.washington.edu.crt'
+KEY_FILE = '/Users/jimt/src/UW/IAM/certs/gws.cac.washington.edu.key'
+CA_FILE = '/Users/jimt/src/UW/IAM/certs/ca-no-uw-bundle.crt'
 VERIFY_HOST = True
 
 GWS_BASE = 'https://' + HOST + '/group_sws/v3'
