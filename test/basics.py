@@ -29,7 +29,7 @@ def _basics_verify_error(ext, stat, res=None):
     data = _basics_verify_base(ext, stat, res)
     assert data['errors'][0]['status'] == stat
     assert len(data['errors'][0]['detail'][0]) > 0
-    print('stat=%d, detail=%s' % (stat, data['errors'][0]['detail'][0]))
+    # print('stat=%d, detail=%s' % (stat, data['errors'][0]['detail'][0]))
 
 
 class Basics_Test():
