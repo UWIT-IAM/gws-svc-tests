@@ -20,8 +20,10 @@ class Affiliate_Test():
 
     def test_00_init(self):
         resp = delete_group(conf.testgroup2)
+        # print(f"delete_group resp = {resp}")
         assert resp == 200 or resp == 404
         resp = build_group(conf.testgroup2)
+        # print(f"build_group resp = {resp}")
         assert resp == 201
 
     # test set google
@@ -110,6 +112,6 @@ class Affiliate_Test():
 
     # test cleanup
     def test_99_cleanup(self):
-        print('cleanup')
+        # print('cleanup')
         resp = delete_group(conf.testgroup2)
         assert resp == 200

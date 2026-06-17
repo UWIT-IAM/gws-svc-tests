@@ -43,6 +43,7 @@ class Search_Test():
     # create second group
     def test_02_create_group(self):
         stat = delete_group(conf.testgroup2)
+        # print(f"stat = {stat}")
         assert stat == 200 or stat == 404
         stat = build_group(conf.testgroup2)
         assert stat == 200 or stat == 201 or stat == 412
@@ -99,7 +100,7 @@ class Search_Test():
     def test_12_search(self):
         (stat, data) = search_groups(name='*' + conf.testgroup2['id'][6:] + '*')
         assert stat == 200
-        print(data)
+        # print(data)
         assert self._find_id(data, conf.testgroup2['id'])
         assert self._find_id(data, conf.testgroup3['id'])
 
